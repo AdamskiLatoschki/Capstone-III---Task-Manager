@@ -69,5 +69,8 @@ Select one of the following options below:
 
 - Display stats - The programme will display all general information about tasks assigned to each registered user.
 
-- Generate reports - This option does the same thing as "display stats," but instead of displaying all of the information on the screen, 
-                    it prints everything to the files.
+- Generate reports - This is a feature that only the admin user has access to. The goal of this feature is to create two files in the system that contain information about the users: `(user_overview.txt)` and `(task_overview.txt)`.
+
+`(user_overview.txt)` - will display statistics for each user, including the number of tasks assigned to them, the number of tasks completed and uncompleted, and the number of tasks that are past due.
+
+`(task_overview.txt)` - will display statistics about all tasks that have been registered in the system, including total tasks, tasks that have been completed and those that have not, as well as the number of tasks that are past due for all users combined. 
