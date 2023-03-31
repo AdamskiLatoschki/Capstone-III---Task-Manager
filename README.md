@@ -1,28 +1,73 @@
-﻿The project name: 'Task Manager'
+# Capstone III Task Manager
 
-This program allows admin to register a new user. Admin can also create new tasks and assign them to any user they want. This includes adding a date when the task has been assign and due date of that task. This information can be edited any time. All data is stored on file. Admin can also generate reports called task overview. Reports contain all details about tasks created and assigned as well as user overview with details about each user or task assigned to them. 
-<br><br><br>
-Please see short intruction with screenshots how to use the program.
-<br><br>
-*Use username: admin and password: adm1n to login to the program. You can also find these details in user.txt file.
-<img src="https://github.com/AdamskiLatoschki/Capstone-III---Task-Manager/blob/master/Instruction%20pictures/Task%20manager%20%201.JPG" />
-<br><br>
-*The menu - Once you logged in , the program will display the user menu.
-<img src="https://github.com/AdamskiLatoschki/Capstone-III---Task-Manager/blob/master/Instruction%20pictures/Task%20manager%202.JPG" />
-<br><br>
-*Register a new user - this is only available for admin user.This option will ask to enter a username and password. If the entered username is already registered, program will display a message and asks to try again. The same message you will see if your passwords do not match.
-<img src="https://github.com/AdamskiLatoschki/Capstone-III---Task-Manager/blob/master/Instruction%20pictures/Task%20Manager%203.JPG" />
-<br><br>
-*Add a new task - This option will allow you to add a new tasks. Program willl ask you to enter task title , description, username the task you want to assign to and the due date for this task.
-<img src="https://github.com/AdamskiLatoschki/Capstone-III---Task-Manager/blob/master/Instruction%20pictures/Task%20manager%204.JPG" />
-<br><br>
-*View all tasks - The program will display all created tasks.
-<img src="https://github.com/AdamskiLatoschki/Capstone-III---Task-Manager/blob/master/Instruction%20pictures/Task%20manager%205.JPG" />
-<br><br>
-*Vie all my tasks - The program will display on the screen tasks assigned only to the logged in user.
-<img src="https://github.com/AdamskiLatoschki/Capstone-III---Task-Manager/blob/master/Instruction%20pictures/Task%20manager%206.JPG" />
-<br><br>
-*Display stats - The program will display all the general information about tasks assigned and individually for each user registered.
-<img src="https://github.com/AdamskiLatoschki/Capstone-III---Task-Manager/blob/master/Instruction%20pictures/Task%20manager%207.JPG" />
-<br><br>
-*Generate reports - This option do exactly the same thing as the option above 'display stats' but instead of displaying all the information on the screen, everything will be printed to the files.
+<br>
+
+## The project description: 
+The program was created to help a small business manage tasks assigned to each team member. This includes converting tasks and related data to and from text files, as well as creating, storing, displaying, and editing them.  
+
+<br>
+
+## Installation
+
+To run this program, you must have Python 3, preferably, PyCharm installed on your computer and Notepad or other txt editor to open generated reports.
+
+<br>
+
+## Modules Used
+
+The following modules are used in this project:
+
+- `datetime` - The datetime module supplies classes for manipulating dates and times.
+
+<br>
+
+## Download the Source Code
+
+You can download the source code from the GitHub repository.
+
+<br>
+
+## Run the Application
+
+To run the application, navigate to the directory where you downloaded the source code and run the following command:
+```
+python task_manager.py
+
+Log in to the programme using "admin" as your username and "adm1n" as your password. 
+These specifics are also contained in the user.txt file.
+```
+
+<br>
+
+## Menu
+
+The user menu will be displayed once you have logged in. The user can enter the number of the option that they want to access from this menu.
+
+```
+Select one of the following options below:
+    r -  Register a new user
+    a -  Add a task
+    va - View all tasks
+    vm - View my tasks
+    gr - Generate reports
+    ds - Display stats
+    e -  Exit
+    :
+ ```
+ 
+ 
+- Register a new user - This option is only available to administrators. This option will prompt you for a username and password. 
+                        If the entered username is already in use, the program will notify you and prompt you to try again. 
+                        If your passwords do not match, you will see this message. 
+
+- Add a new task - You can add new tasks using this option. The program will prompt you to enter the task title, description, 
+                   username of the person you want to  assign the task to, and the task's deadline. 
+
+- View all tasks - The application will display all tasks that have been generated.
+
+- Vie all my tasks - The programme will display on the screen tasks assigned only to the logged-in user.
+
+- Display stats - The programme will display all general information about tasks assigned to each registered user.
+
+- Generate reports - This option does the same thing as "display stats," but instead of displaying all of the information on the screen, 
+                    it prints everything to the files.
